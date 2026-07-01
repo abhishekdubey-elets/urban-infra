@@ -21,7 +21,7 @@ export default function Loader() {
         >
           <div className="flex flex-col items-center gap-6">
             <div className="relative h-16 w-16">
-              <span className="absolute inset-0 rounded-full border-2 border-white/10" />
+              <span className="absolute inset-0 rounded-full border-2 border-slate-200" />
               <motion.span
                 className="absolute inset-0 rounded-full border-2 border-transparent border-t-brand-teal"
                 animate={{ rotate: 360 }}
@@ -38,7 +38,7 @@ export default function Loader() {
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="text-sm font-medium uppercase tracking-[0.4em] text-white/60"
+                className="text-sm font-medium uppercase tracking-[0.4em] text-slate-500"
               >
                 Urban Infra Summit
               </motion.p>

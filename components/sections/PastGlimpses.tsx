@@ -48,9 +48,9 @@ export function PastGlimpses() {
               <div className="absolute inset-0 bg-noise opacity-[0.06]" />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/80 to-transparent opacity-70" />
               <div className="absolute inset-x-0 bottom-0 translate-y-2 p-4 text-left opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                <span className="text-sm font-semibold text-white">{t.label}</span>
+                <span className="text-sm font-semibold text-ink">{t.label}</span>
               </div>
-              <span className="absolute right-3 top-3 rounded-full bg-ink/50 px-2 py-1 text-[10px] uppercase tracking-wider text-white/70 backdrop-blur">
+              <span className="absolute right-3 top-3 rounded-full bg-ink/50 px-2 py-1 text-[10px] uppercase tracking-wider text-slate-600 backdrop-blur">
                 2025
               </span>
             </motion.button>
@@ -78,7 +78,7 @@ export function PastGlimpses() {
               <div className={`absolute inset-0 bg-gradient-to-br ${tiles[open].g}`} />
               <div className="absolute inset-0 bg-noise opacity-[0.07]" />
               <div className="absolute inset-0 grid place-items-center">
-                <span className="font-display text-2xl font-bold text-white">
+                <span className="font-display text-2xl font-bold text-ink">
                   {tiles[open].label}
                 </span>
               </div>

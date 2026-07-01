@@ -52,7 +52,7 @@ export function Navbar() {
                 key={l.href}
                 href={l.href}
                 data-cursor="hover"
-                className="group relative rounded-full px-3.5 py-2 text-sm text-white/70 transition-colors hover:text-white"
+                className="group relative rounded-full px-3.5 py-2 text-sm text-slate-700 transition-colors hover:text-ink"
               >
                 {l.label}
                 <span className="absolute inset-x-3.5 -bottom-0.5 h-px origin-left scale-x-0 bg-brand-gradient transition-transform duration-300 group-hover:scale-x-100" />
@@ -109,7 +109,7 @@ export function Navbar() {
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.04 }}
-                  className="rounded-xl px-4 py-3 text-base text-white/80 transition-colors hover:bg-white/5 hover:text-white"
+                  className="rounded-xl px-4 py-3 text-base text-slate-700 transition-colors hover:bg-slate-100 hover:text-ink"
                 >
                   {l.label}
                 </motion.a>

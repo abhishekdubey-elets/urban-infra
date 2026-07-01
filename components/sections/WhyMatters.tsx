@@ -33,10 +33,10 @@ export function WhyMatters() {
                   <div className="font-display text-4xl font-bold text-gradient">
                     {m.stat}
                   </div>
-                  <h3 className="mt-4 font-display text-lg font-semibold text-white">
+                  <h3 className="mt-4 font-display text-lg font-semibold text-ink">
                     {m.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-white/60">
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">
                     {m.body}
                   </p>
                 </motion.div>

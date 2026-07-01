@@ -119,16 +119,87 @@ export const TRACKS = [
 ];
 
 export const SPEAKERS = [
-  { name: "Hon'ble Minister", role: "Urban Development, Govt. of Karnataka", featured: true },
-  { name: "Principal Secretary", role: "Housing & Urban Affairs", featured: true },
-  { name: "Municipal Commissioner", role: "Bruhat Bengaluru Mahanagara Palike" },
-  { name: "Managing Director", role: "Smart City Mission SPV" },
-  { name: "Head of Infrastructure", role: "Global Investment Fund" },
-  { name: "CEO", role: "Leading Urban Mobility Company" },
-  { name: "Partner", role: "Infrastructure Advisory Practice" },
-  { name: "Director", role: "Multilateral Development Bank" },
-  { name: "Founder", role: "Urban Climate-Tech Startup" },
-  { name: "Chief Sustainability Officer", role: "Fortune 500 Developer" },
+  {
+    name: "Vandita Sharma, IAS",
+    role: "Former Chief Secretary, Government of Karnataka",
+    image: "/images/speakers/vandita-sharma.png",
+    featured: true,
+  },
+  {
+    name: "Smt D Thara, IAS",
+    role: "Additional Secretary, Ministry of Housing and Urban Affairs (MoHUA), Government of India",
+    image: "/images/speakers/d-thara.png",
+    featured: true,
+  },
+  {
+    name: "L.K. Atheeq, IAS",
+    role: "Former Additional Chief Secretary, Rural Development & Panchayat Raj Department, Government of Karnataka",
+    image: "/images/speakers/lk-atheeq.png",
+  },
+  {
+    name: "V Ponnuraj, IAS",
+    role: "Department of Personnel & Administrative Reforms (e-Governance), Government of Karnataka",
+    image: "/images/speakers/v-ponnuraj.png",
+  },
+  {
+    name: "Dileesh Sasi, IAS",
+    role: "Director, Electronic Delivery of Citizen Services (EDCS), eGovernance Department, Government of Karnataka",
+    image: "/images/speakers/dileesh-sasi.png",
+  },
+  {
+    name: "Shri Saurabh Joshi",
+    role: "Mayor, Municipal Corporation, Chandigarh",
+    image: "/images/speakers/saurabh-joshi.png",
+  },
+  {
+    name: "Amit Kumar, IAS",
+    role: "Commissioner, Municipal Corporation, Chandigarh",
+    image: "/images/speakers/amit-kumar.png",
+  },
+  {
+    name: "Amneet P Kumar, IAS",
+    role: "Principal Secretary, Department of Civil Aviation & Future, Government of Haryana",
+    image: "/images/speakers/amneet-p-kumar.png",
+  },
+  {
+    name: "Arun Mahesh Babu M.S, IAS",
+    role: "Municipal Commissioner, Vadodara Municipal Corporation",
+    image: "/images/speakers/arun-mahesh-babu.png",
+  },
+  {
+    name: "Shri Radhabinod Aribam Sharma, IAS",
+    role: "Commissioner, Mira Bhayandar Municipal Corporation",
+    image: "/images/speakers/radhabinod-sharma.png",
+  },
+  {
+    name: "Chander Shekhar Khare, IAS",
+    role: "Chief Administrator, Haryana Shehri Vikas Pradhikaran, Government of Haryana",
+    image: "/images/speakers/chander-shekhar-khare.png",
+  },
+  {
+    name: "Binu Francis, IAS",
+    role: "Joint Managing Director, Kerala Water Authority",
+    image: "/images/speakers/binu-francis.png",
+  },
+  {
+    name: "Dr. Narhari Singh Banger, IAS",
+    role: "Municipal Commissioner, Municipal Corporation Gurugram",
+    image: "/images/speakers/narhari-banger.png",
+  },
+  {
+    name: "Shalabh Goel",
+    role: "Managing Director, National Capital Region Transport Corporation Ltd. (NCRTC)",
+    image: "/images/speakers/shalabh-goel.png",
+  },
+  {
+    name: "Dr. Arun Manhas",
+    role: "Director, Industries and Commerce, UT of Jammu & Kashmir",
+    image: "/images/speakers/arun-manhas.png",
+  },
+  {
+    name: "Rakesh Singh",
+    role: "Former Principal Secretary, Water Resources Department, Government of Karnataka & Former Chairman, Belagavi Smart City Limited",
+  },
 ];
 
 export const ATTENDEE_RINGS = [

@@ -68,10 +68,10 @@ export function FocusSectors() {
                   <div className="absolute inset-0 -z-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                     <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-brand-teal/25 blur-2xl" />
                   </div>
-                  <span className="relative grid h-11 w-11 flex-none place-items-center rounded-xl bg-white/5 text-brand-teal transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-teal/15 group-hover:text-brand-lime">
+                  <span className="relative grid h-11 w-11 flex-none place-items-center rounded-xl bg-slate-100 text-brand-teal transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-teal/15 group-hover:text-brand-lime">
                     <Icon className="h-5 w-5" />
                   </span>
-                  <span className="relative text-sm font-medium leading-tight text-white/85">
+                  <span className="relative text-sm font-medium leading-tight text-slate-700">
                     {label}
                   </span>
                 </motion.div>

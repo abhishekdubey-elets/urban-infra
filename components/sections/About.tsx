@@ -38,7 +38,7 @@ export function About() {
               <Reveal key={p} direction="left" delay={i * 0.08}>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 flex-none text-brand-teal" />
-                  <p className="text-white/75">{p}</p>
+                  <p className="text-slate-700">{p}</p>
                 </div>
               </Reveal>
             ))}
@@ -62,10 +62,10 @@ export function About() {
                   { k: "1500+", v: "Delegates" },
                 ].map((b) => (
                   <div key={b.v} className="rounded-2xl glass p-5">
-                    <div className="font-display text-2xl font-bold text-white">
+                    <div className="font-display text-2xl font-bold text-ink">
                       {b.k}
                     </div>
-                    <div className="text-xs uppercase tracking-wider text-white/50">
+                    <div className="text-xs uppercase tracking-wider text-slate-500">
                       {b.v}
                     </div>
                   </div>

@@ -51,7 +51,7 @@ export function WhoWillAttend() {
                       className={`absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold transition-all ${
                         isActive
                           ? "bg-brand-gradient text-ink"
-                          : "bg-ink-100 text-white/60 ring-1 ring-white/10"
+                          : "bg-ink-100 text-slate-600 ring-1 ring-slate-200"
                       }`}
                     >
                       {ring.label}
@@ -59,9 +59,23 @@ export function WhoWillAttend() {
                   </motion.button>
                 );
               })}
-              {/* center pulse */}
-              <div className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-lime shadow-glow">
-                <span className="absolute inset-0 animate-pulse-ring rounded-full bg-brand-lime/60" />
+              {/* center medallion */}
+              <div className="pointer-events-none absolute left-1/2 top-1/2 grid aspect-square w-[28%] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-ink text-center shadow-glow ring-1 ring-brand-teal/30">
+                <span className="absolute -inset-2 animate-pulse-ring rounded-full bg-brand-teal/25" />
+                <motion.div
+                  key={current.label}
+                  initial={{ opacity: 0, scale: 0.85 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.35 }}
+                  className="relative px-2"
+                >
+                  <div className="font-display text-2xl font-bold leading-none text-brand-lime sm:text-3xl">
+                    {current.items.length}
+                  </div>
+                  <div className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-white/70 sm:text-xs">
+                    {current.label}
+                  </div>
+                </motion.div>
               </div>
             </div>
           </Reveal>
@@ -82,7 +96,7 @@ export function WhoWillAttend() {
                 {current.items.map((it) => (
                   <div
                     key={it}
-                    className="rounded-xl bg-white/5 px-4 py-3 text-sm text-white/80"
+                    className="rounded-xl bg-slate-100 px-4 py-3 text-sm text-slate-700"
                   >
                     {it}
                   </div>
@@ -95,7 +109,7 @@ export function WhoWillAttend() {
                     onClick={() => setActive(i)}
                     aria-label={`Ring ${i + 1}`}
                     className={`h-1.5 rounded-full transition-all ${
-                      i === active ? "w-8 bg-brand-teal" : "w-4 bg-white/20"
+                      i === active ? "w-8 bg-brand-teal" : "w-4 bg-slate-300"
                     }`}
                   />
                 ))}

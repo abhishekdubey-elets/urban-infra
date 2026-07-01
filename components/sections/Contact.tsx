@@ -29,16 +29,16 @@ export function Contact() {
               <Reveal key={c.label} direction="left" delay={i * 0.08}>
                 <a
                   href={c.href ?? "#"}
-                  className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-4 transition-colors hover:border-brand-teal/40"
+                  className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-4 transition-colors hover:border-brand-teal/40"
                 >
                   <span className="grid h-12 w-12 place-items-center rounded-xl bg-brand-teal/10 text-brand-teal">
                     <c.icon className="h-5 w-5" />
                   </span>
                   <span>
-                    <span className="block text-xs uppercase tracking-wider text-white/45">
+                    <span className="block text-xs uppercase tracking-wider text-slate-500">
                       {c.label}
                     </span>
-                    <span className="font-medium text-white">{c.value}</span>
+                    <span className="font-medium text-ink">{c.value}</span>
                   </span>
                 </a>
               </Reveal>
@@ -47,7 +47,7 @@ export function Contact() {
 
           {/* Stylised map */}
           <Reveal direction="up" delay={0.2}>
-            <div className="relative mt-6 h-44 overflow-hidden rounded-2xl border border-white/10">
+            <div className="relative mt-6 h-44 overflow-hidden rounded-2xl border border-slate-200">
               <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/15 via-ink to-brand-purple/15" />
               <div
                 className="absolute inset-0 opacity-30"
@@ -63,7 +63,7 @@ export function Contact() {
                   <MapPin className="h-6 w-6 text-brand-lime" />
                 </span>
               </div>
-              <span className="absolute bottom-3 left-3 rounded-full bg-ink/60 px-3 py-1 text-xs text-white/70 backdrop-blur">
+              <span className="absolute bottom-3 left-3 rounded-full bg-slate-100/90 px-3 py-1 text-xs text-slate-700 backdrop-blur">
                 Bengaluru · Karnataka
               </span>
             </div>
@@ -79,10 +79,10 @@ export function Contact() {
             }}
             className="gradient-border rounded-3xl p-7 sm:p-9"
           >
-            <h3 className="font-display text-xl font-semibold text-white">
+            <h3 className="font-display text-xl font-semibold text-ink">
               Register your interest
             </h3>
-            <p className="mt-1 text-sm text-white/55">
+            <p className="mt-1 text-sm text-slate-600">
               We&apos;ll get back to you with delegate and partnership details.
             </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -92,10 +92,10 @@ export function Contact() {
               <Field label="Phone" placeholder="+91" />
             </div>
             <div className="mt-4">
-              <label className="mb-1.5 block text-xs uppercase tracking-wider text-white/45">
+              <label className="mb-1.5 block text-xs uppercase tracking-wider text-slate-500">
                 I&apos;m interested in
               </label>
-              <select className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-white outline-none transition-colors focus:border-brand-teal/60">
+              <select className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-ink outline-none transition-colors focus:border-brand-teal/60">
                 <option className="bg-ink">Attending as a delegate</option>
                 <option className="bg-ink">Sponsorship / partnership</option>
                 <option className="bg-ink">Speaking opportunity</option>
@@ -135,13 +135,13 @@ function Field({
 }) {
   return (
     <label className="block">
-      <span className="mb-1.5 block text-xs uppercase tracking-wider text-white/45">
+      <span className="mb-1.5 block text-xs uppercase tracking-wider text-slate-500">
         {label}
       </span>
       <input
         type={type}
         placeholder={placeholder}
-        className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-white placeholder:text-white/30 outline-none transition-colors focus:border-brand-teal/60"
+        className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-ink placeholder:text-slate-400 outline-none transition-colors focus:border-brand-teal/60"
       />
     </label>
   );

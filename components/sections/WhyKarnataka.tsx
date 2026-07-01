@@ -102,7 +102,7 @@ export function WhyKarnataka() {
                         x={c.x}
                         y={c.y - 3}
                         textAnchor="middle"
-                        className="fill-white/70"
+                        className="fill-slate-600"
                         style={{
                           fontSize: 3,
                           fontWeight: isActive ? 700 : 400,
@@ -131,10 +131,10 @@ export function WhyKarnataka() {
                   <div className="text-xs uppercase tracking-[0.25em] text-brand-teal">
                     Spotlight City
                   </div>
-                  <h3 className="mt-2 font-display text-3xl font-bold text-white">
+                  <h3 className="mt-2 font-display text-3xl font-bold text-ink">
                     {current?.name}
                   </h3>
-                  <p className="mt-2 text-white/65">{current?.note}</p>
+                  <p className="mt-2 text-slate-600">{current?.note}</p>
                 </motion.div>
               </div>
             </Reveal>
@@ -148,8 +148,8 @@ export function WhyKarnataka() {
                     data-cursor="hover"
                     className={`w-full rounded-xl border px-4 py-3 text-left text-sm transition-all duration-300 ${
                       active === c.name
-                        ? "border-brand-teal/60 bg-brand-teal/10 text-white shadow-glow"
-                        : "border-white/10 bg-white/[0.03] text-white/60 hover:border-white/25 hover:text-white"
+                        ? "border-brand-teal/60 bg-brand-teal/10 text-ink shadow-glow"
+                        : "border-slate-200 bg-slate-50 text-slate-700 hover:border-brand-teal/25 hover:text-ink"
                     }`}
                   >
                     {c.name}

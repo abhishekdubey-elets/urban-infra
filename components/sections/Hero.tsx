@@ -41,7 +41,7 @@ export function Hero() {
         className="absolute inset-x-0 bottom-0 h-[62%] opacity-90"
       >
         <SkylineScene />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-100 via-slate-200 to-transparent" />
       </motion.div>
 
       <Particles />
@@ -79,7 +79,7 @@ export function Hero() {
             </span>
           </motion.div>
 
-          <h1 className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[4.4rem]">
+          <h1 className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight text-ink sm:text-5xl md:text-6xl lg:text-[4.4rem]">
             <RevealLine text="Financing the Future of" delay={0.4} />
             <span className="mt-1 block">
               <RevealLine
@@ -94,7 +94,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.85, duration: 0.7 }}
-            className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/65 sm:text-lg"
+            className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg"
           >
             The 9th Elets National Urban Infrastructure & Investment Summit unites
             policymakers, investors and innovators to shape India&apos;s urban future.
@@ -104,12 +104,12 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.7 }}
-            className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-white/70"
+            className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-600"
           >
             <span className="inline-flex items-center gap-2">
               <MapPin className="h-4 w-4 text-brand-teal" /> {SUMMIT.location}
             </span>
-            <span className="h-4 w-px bg-white/15" />
+            <span className="h-4 w-px bg-slate-300" />
             <span className="inline-flex items-center gap-2">
               <CalendarDays className="h-4 w-4 text-brand-teal" /> {SUMMIT.date}
             </span>
@@ -147,7 +147,7 @@ export function Hero() {
                     plain={(s as { plain?: boolean }).plain}
                   />
                 </div>
-                <div className="mt-2 text-xs uppercase tracking-wider text-white/55">
+                <div className="mt-2 text-xs uppercase tracking-wider text-slate-500">
                   {s.label}
                 </div>
               </div>
@@ -166,7 +166,7 @@ export function Hero() {
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.8, repeat: Infinity }}
-          className="flex h-10 w-6 items-start justify-center rounded-full border border-white/25 p-1.5"
+          className="flex h-10 w-6 items-start justify-center rounded-full border border-slate-200 p-1.5"
         >
           <motion.span
             animate={{ y: [0, 10, 0], opacity: [1, 0.2, 1] }}
@@ -224,8 +224,8 @@ function FloatingChip({
       transition={{ delay: 1.4, duration: 0.8 }}
     >
       <div className="animate-float rounded-2xl glass-strong px-4 py-3 shadow-glass">
-        <div className="text-sm font-semibold text-white">{title}</div>
-        <div className="text-xs text-white/55">{sub}</div>
+        <div className="text-sm font-semibold text-ink">{title}</div>
+        <div className="text-xs text-slate-500">{sub}</div>
       </div>
     </motion.div>
   );

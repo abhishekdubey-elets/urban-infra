@@ -42,7 +42,7 @@ export function WhyNow() {
 
         <div ref={ref} className="relative mt-16">
           {/* Center line */}
-          <div className="absolute left-4 top-0 h-full w-px bg-white/10 md:left-1/2 md:-translate-x-1/2">
+          <div className="absolute left-4 top-0 h-full w-px bg-slate-200 md:left-1/2 md:-translate-x-1/2">
             <motion.div
               style={{ scaleY: lineScale }}
               className="h-full w-full origin-top bg-brand-gradient"
@@ -81,14 +81,14 @@ export function WhyNow() {
                       className="gradient-border group rounded-2xl p-6 transition-shadow hover:shadow-glow"
                     >
                       <div className="flex items-center gap-4">
-                        <span className="grid h-12 w-12 flex-none place-items-center rounded-xl bg-white/5 text-brand-teal transition-colors group-hover:bg-brand-teal/15">
+                        <span className="grid h-12 w-12 flex-none place-items-center rounded-xl bg-slate-100 text-brand-teal transition-colors group-hover:bg-brand-teal/15">
                           <Icon className="h-6 w-6" />
                         </span>
-                        <h3 className="font-display text-xl font-semibold text-white">
+                        <h3 className="font-display text-xl font-semibold text-ink">
                           {item.title}
                         </h3>
                       </div>
-                      <p className="mt-3 max-h-0 overflow-hidden text-sm text-white/0 transition-all duration-500 group-hover:max-h-32 group-hover:text-white/65 md:text-white/65 md:max-h-32">
+                      <p className="mt-3 max-h-0 overflow-hidden text-sm text-slate-500 transition-all duration-500 group-hover:max-h-32 group-hover:text-slate-600 md:text-slate-600 md:max-h-32">
                         {item.body}
                       </p>
                     </motion.div>

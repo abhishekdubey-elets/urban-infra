@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --bg: #070b14;
+  --bg: #f8fafc;
 }
 
 * {
@@ -17,7 +17,7 @@ html {
 
 body {
   background-color: var(--bg);
-  color: #e7ecf5;
+  color: #0f172a;
   font-feature-settings: "ss01", "cv01";
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -27,7 +27,7 @@ body {
 /* ---------- Selection ---------- */
 ::selection {
   background: rgba(31, 194, 201, 0.35);
-  color: #fff;
+  color: #0f172a;
 }
 
 /* ---------- Scrollbar ---------- */
@@ -35,10 +35,10 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #070b14;
+  background: #f8fafc;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#1fc2c9, #6a57a6);
+  background: linear-gradient(#3e7ac4, #6a57a6);
   border-radius: 999px;
 }
 
@@ -48,11 +48,11 @@ body {
   }
 
   .glass {
-    @apply border border-white/10 bg-white/[0.04] backdrop-blur-xl;
+    @apply border border-slate-200/80 bg-white/70 text-slate-900 backdrop-blur-xl;
   }
 
   .glass-strong {
-    @apply border border-white/15 bg-white/[0.07] backdrop-blur-2xl;
+    @apply border border-slate-200/80 bg-white/80 text-slate-900 backdrop-blur-2xl;
   }
 
   .text-gradient {
@@ -61,7 +61,7 @@ body {
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-white/70 backdrop-blur-md;
+    @apply inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-slate-100 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-slate-600 backdrop-blur-md;
   }
 
   /* Gradient border card */

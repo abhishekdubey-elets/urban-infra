@@ -36,7 +36,7 @@ export function MagneticButton({
   const styles =
     variant === "primary"
       ? "text-ink bg-brand-gradient bg-[length:200%_200%] hover:bg-[position:100%_50%] shadow-glow"
-      : "text-white glass hover:bg-white/10";
+      : "text-ink glass hover:bg-slate-100";
 
   const Inner = (
     <motion.div

@@ -30,8 +30,8 @@ export function Tracks() {
                 <div
                   className={`overflow-hidden rounded-2xl border transition-colors duration-300 ${
                     isOpen
-                      ? "border-brand-teal/40 bg-white/[0.05]"
-                      : "border-white/10 bg-white/[0.02]"
+                      ? "border-brand-teal/40 bg-slate-50/80"
+                      : "border-slate-200 bg-slate-50"
                   }`}
                 >
                   <button
@@ -42,12 +42,12 @@ export function Tracks() {
                     <span className="font-display text-sm font-bold text-brand-teal">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <span className="flex-1 font-display text-lg font-semibold text-white">
+                    <span className="flex-1 font-display text-lg font-semibold text-ink">
                       {t.title}
                     </span>
                     <motion.span
                       animate={{ rotate: isOpen ? 45 : 0 }}
-                      className="grid h-8 w-8 flex-none place-items-center rounded-full bg-white/5 text-white/70"
+                      className="grid h-8 w-8 flex-none place-items-center rounded-full bg-slate-100 text-slate-500"
                     >
                       <Plus className="h-4 w-4" />
                     </motion.span>
@@ -60,7 +60,7 @@ export function Tracks() {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                       >
-                        <p className="px-6 pb-6 pl-[3.4rem] text-white/65">
+                        <p className="px-6 pb-6 pl-[3.4rem] text-slate-600">
                           {t.body}
                         </p>
                       </motion.div>

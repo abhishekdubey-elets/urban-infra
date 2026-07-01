@@ -28,9 +28,9 @@ function Row({ reverse = false }: { reverse?: boolean }) {
         {[...partners, ...partners].map((p, i) => (
           <div
             key={i}
-            className="group flex h-16 min-w-[180px] items-center justify-center rounded-xl border border-white/10 bg-white/[0.02] px-7 transition-colors hover:border-white/25"
+            className="group flex h-16 min-w-[180px] items-center justify-center rounded-xl border border-slate-200 bg-slate-50/80 px-7 transition-colors hover:border-brand-teal/40"
           >
-            <span className="font-display text-sm font-semibold text-white/40 transition-all duration-300 group-hover:text-gradient">
+            <span className="font-display text-sm font-semibold text-slate-600 transition-all duration-300 group-hover:text-brand-teal">
               {p}
             </span>
           </div>
@@ -50,7 +50,7 @@ export function PastPartners() {
               <span className="h-1.5 w-1.5 rounded-full bg-brand-teal" />
               Past Partners & Supporters
             </span>
-            <h2 className="mx-auto mt-5 max-w-2xl font-display text-3xl font-bold text-white sm:text-4xl">
+            <h2 className="mx-auto mt-5 max-w-2xl font-display text-3xl font-bold text-ink sm:text-4xl">
               Trusted by the institutions{" "}
               <span className="text-gradient">building India&apos;s cities</span>
             </h2>

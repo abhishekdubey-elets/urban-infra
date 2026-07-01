@@ -37,7 +37,7 @@ export function SectionHeading({
         text={title}
         highlight={highlight}
         className={cn(
-          "max-w-4xl font-display text-3xl font-bold leading-[1.08] tracking-tight text-white sm:text-4xl md:text-5xl",
+          "max-w-4xl font-display text-3xl font-bold leading-[1.08] tracking-tight text-ink sm:text-4xl md:text-5xl",
           align === "center" && "justify-center"
         )}
       />
@@ -45,7 +45,7 @@ export function SectionHeading({
         <Reveal direction="up" delay={0.1}>
           <p
             className={cn(
-              "max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg",
+              "max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg",
               align === "center" && "mx-auto"
             )}
           >

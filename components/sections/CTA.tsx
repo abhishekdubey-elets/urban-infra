@@ -10,10 +10,10 @@ export function CTA() {
   return (
     <section id="register" className="relative overflow-hidden py-28 sm:py-36">
       {/* skyline backdrop */}
-      <div className="absolute inset-x-0 bottom-0 h-[55%] opacity-50">
+      <div className="absolute inset-x-0 bottom-0 h-[55%] opacity-40">
         <SkylineScene />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink" />
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-100 via-slate-200 to-transparent" />
       <motion.div
         className="absolute left-1/2 top-1/2 h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-teal/10 blur-[140px]"
         animate={{ scale: [1, 1.15, 1], opacity: [0.6, 1, 0.6] }}
@@ -29,13 +29,13 @@ export function CTA() {
             </span>
           </Reveal>
           <Reveal direction="up" delay={0.1}>
-            <h2 className="mt-6 font-display text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl">
+            <h2 className="mt-6 font-display text-4xl font-bold leading-[1.08] tracking-tight text-ink sm:text-5xl md:text-6xl">
               Join policymakers, investors and urban leaders shaping the{" "}
               <span className="text-gradient animate-gradient-pan">future of cities</span>
             </h2>
           </Reveal>
           <Reveal direction="up" delay={0.2}>
-            <p className="mx-auto mt-6 max-w-xl text-lg text-white/65">
+            <p className="mx-auto mt-6 max-w-xl text-lg text-slate-600">
               Be part of the conversations that turn ambition into resilient,
               sustainable and investment-ready cities.
             </p>

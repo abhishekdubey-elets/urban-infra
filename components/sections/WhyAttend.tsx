@@ -37,7 +37,7 @@ export function WhyAttend() {
               <motion.div
                 whileHover={{ scale: 1.015 }}
                 transition={{ type: "spring", stiffness: 280, damping: 20 }}
-                className="group relative flex h-full flex-col justify-between overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-6"
+                className="group relative flex h-full flex-col justify-between overflow-hidden rounded-3xl border border-slate-200 bg-slate-50/80 p-6"
                 data-cursor="hover"
               >
                 {/* morphing background */}
@@ -49,7 +49,7 @@ export function WhyAttend() {
                 <div className="relative">
                   <h3
                     className={cn(
-                      "font-display font-semibold text-white",
+                      "font-display font-semibold text-slate-900",
                       c.size === "lg" ? "text-2xl" : "text-lg"
                     )}
                   >
@@ -57,7 +57,7 @@ export function WhyAttend() {
                   </h3>
                   <p
                     className={cn(
-                      "mt-2 text-sm leading-relaxed text-white/60",
+                      "mt-2 text-sm leading-relaxed text-slate-600",
                       c.size === "sm" && "hidden sm:block"
                     )}
                   >
