@@ -1,7 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Sparkles } from "lucide-react";
+import {
+  Cpu,
+  GraduationCap,
+  Handshake,
+  Landmark,
+  Megaphone,
+  Sparkles,
+  TrendingUp,
+  type LucideIcon,
+} from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Stagger, StaggerItem } from "@/components/ui/Reveal";
 import { WHY_ATTEND } from "@/lib/content";
@@ -11,6 +20,15 @@ const span: Record<string, string> = {
   lg: "sm:col-span-2 sm:row-span-2",
   md: "sm:col-span-2",
   sm: "sm:col-span-1",
+};
+
+const icons: Record<string, LucideIcon> = {
+  Landmark,
+  TrendingUp,
+  Handshake,
+  Cpu,
+  Megaphone,
+  GraduationCap,
 };
 
 export function WhyAttend() {
@@ -28,7 +46,9 @@ export function WhyAttend() {
           stagger={0.07}
           className="mt-12 grid auto-rows-[150px] grid-cols-1 gap-4 sm:grid-cols-4"
         >
-          {WHY_ATTEND.map((c) => (
+          {WHY_ATTEND.map((c) => {
+            const Icon = icons[c.icon] ?? Sparkles;
+            return (
             <StaggerItem
               key={c.title}
               direction="scale"
@@ -45,7 +65,18 @@ export function WhyAttend() {
                   <div className="absolute -left-10 -top-10 h-40 w-40 animate-float-slow rounded-full bg-brand-teal/20 blur-3xl" />
                   <div className="absolute -bottom-10 -right-10 h-40 w-40 animate-float rounded-full bg-brand-purple/20 blur-3xl" />
                 </div>
-                <Sparkles className="relative h-6 w-6 text-brand-teal" />
+                {/* decorative watermark icon filling the blank space */}
+                <Icon
+                  aria-hidden
+                  strokeWidth={1.25}
+                  className={cn(
+                    "pointer-events-none absolute -bottom-4 -right-4 text-brand-teal/10 transition-all duration-500 group-hover:scale-110 group-hover:text-brand-teal/20",
+                    c.size === "lg" ? "h-52 w-52" : "h-32 w-32"
+                  )}
+                />
+                <span className="relative grid h-11 w-11 place-items-center rounded-2xl bg-brand-teal/10 text-brand-teal ring-1 ring-brand-teal/20">
+                  <Icon className="h-6 w-6" />
+                </span>
                 <div className="relative">
                   <h3
                     className={cn(
@@ -66,7 +97,8 @@ export function WhyAttend() {
                 </div>
               </motion.div>
             </StaggerItem>
-          ))}
+            );
+          })}
         </Stagger>
       </div>
     </section>

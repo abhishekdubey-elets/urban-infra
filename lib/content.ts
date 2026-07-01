@@ -211,12 +211,12 @@ export const ATTENDEE_RINGS = [
 ];
 
 export const WHY_ATTEND = [
-  { title: "Shape national urban policy", size: "lg", body: "Engage directly with the decision-makers defining India's urban agenda to 2047." },
-  { title: "Unlock investment", size: "md", body: "Access a curated pipeline of bankable, investment-ready projects." },
-  { title: "Forge partnerships", size: "md", body: "Meet government, industry and capital under one roof." },
-  { title: "Discover technology", size: "sm", body: "Experience the platforms transforming cities." },
-  { title: "Showcase leadership", size: "sm", body: "Position your brand at the heart of urban transformation." },
-  { title: "Learn from the best", size: "lg", body: "Insights from global mayors, financiers and infrastructure pioneers across an immersive two-day programme." },
+  { title: "Shape national urban policy", size: "lg", icon: "Landmark", body: "Engage directly with the decision-makers defining India's urban agenda to 2047." },
+  { title: "Unlock investment", size: "md", icon: "TrendingUp", body: "Access a curated pipeline of bankable, investment-ready projects." },
+  { title: "Forge partnerships", size: "md", icon: "Handshake", body: "Meet government, industry and capital under one roof." },
+  { title: "Discover technology", size: "sm", icon: "Cpu", body: "Experience the platforms transforming cities." },
+  { title: "Showcase leadership", size: "sm", icon: "Megaphone", body: "Position your brand at the heart of urban transformation." },
+  { title: "Learn from the best", size: "lg", icon: "GraduationCap", body: "Insights from global mayors, financiers and infrastructure pioneers across an immersive two-day programme." },
 ];
 
 export const TESTIMONIALS = [
